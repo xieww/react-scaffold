@@ -1,6 +1,6 @@
 import React from 'react';
 import apiService from '../../api/ApiService';
-import './Demo.less';
+// import './Demo.less';
 
 export default React.createClass({
     componentDidMount() {
