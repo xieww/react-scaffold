@@ -15,6 +15,9 @@ export default React.createClass({
             }
         );
 
+
+        // this.props
+        // this.state
         return (
             <section className="details">
                 <div className="header">{this.props.title}</div>

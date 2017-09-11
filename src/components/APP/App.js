@@ -1,6 +1,7 @@
 import React from 'react';
 import demo from '../Demo';
 import DetailList from '../DetailList';
+import LongButton from '../LongButton';
 import './App.less';
 
 // const sss = React
@@ -62,6 +63,7 @@ export default React.createClass({
             <section className="b-detail">
                 <DetailList list={DETAILS} title="借款详情"></DetailList>
                 <DetailList list={CREDIT} title="征信详情"></DetailList>
+                <LongButton></LongButton>
             </section>
         );
     },
