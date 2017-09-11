@@ -12,6 +12,12 @@ const redirectToChild = (location, replaceState) => {
   replaceState(null, '/about');
 };
 
+/*
+function redirectToChild(location, replaceState) {
+    replaceState(null, '/about');
+}
+*/
+
 function bootstrap() {
     // Make taps on links and buttons work fast on mobiles
     if (FastClick.attach) {
@@ -23,7 +29,6 @@ function bootstrap() {
     render(
         (<Router>
             <Route path="/" component={App}>
-                <IndexRoute component={Demo} onEnter={redirectToChild}/>
                 <Route path="/about" component={Demo} />
             </Route>
           </Router>), document.getElementById('react_container')
