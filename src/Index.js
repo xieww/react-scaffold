@@ -4,12 +4,12 @@ import { render } from 'react-dom';
 import FastClick from 'fastclick';
 import { Router, Route, IndexRoute } from 'react-router';
 import App from './components/APP';
-import Demo from './components/Demo';
+import NewsDetail from './components/news-detail';
 
 window.React = React;
 
 const redirectToChild = (location, replaceState) => {
-  replaceState(null, '/about');
+//  replaceState(null, '/about');
 };
 
 /*
@@ -28,9 +28,8 @@ function bootstrap() {
 
     render(
         (<Router>
-            <Route path="/" component={App}>
-                <Route path="/about" component={Demo} />
-            </Route>
+            <Route path="/" component={App}></Route>
+            <Route path="/detail" component={NewsDetail} />            
           </Router>), document.getElementById('react_container')
         );
 }

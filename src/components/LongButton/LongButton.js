@@ -2,10 +2,10 @@ import React from 'react';
 import './LongButton.less';
 
 export default React.createClass({
-    getInitState() {
+    getInitialState() {
         return {
             buttonText: 0
-        }
+        };
     },
 
     clickMe() {
@@ -16,7 +16,7 @@ export default React.createClass({
     },
 
     render() {
-        
+        console.log(this);
         return (
             <section className="long-button">
                 <span className="single-button" onClick={this.clickMe}>放款{this.state.buttonText}</span>

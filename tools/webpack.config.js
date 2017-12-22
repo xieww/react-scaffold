@@ -103,6 +103,11 @@ const config = {
           'postcss-loader',
         ],
       }, {
+        test: /\.css$/,
+        loaders: [
+          'css-loader',
+        ],
+      }, {
         test: /\.json$/,
         loader: 'json-loader',
       }, {
@@ -147,7 +152,7 @@ const clientConfig = merge({}, config, {
   plugins: [
     new ExtractTextPlugin(DEBUG ? '[name].css?[contenthash]' : '[name].[contenthash].css'),
     new HtmlWebpackPlugin({
-      title: '红包活动页',
+      title: '今日头条新闻聚合阅读',
       template: 'entries/index.html',
       inject: 'body',
       filename: 'index.html',

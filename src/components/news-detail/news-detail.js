@@ -1,9 +1,13 @@
 import React from 'react';
 import apiService from '../../api/ApiService';
-// import './Demo.less';
+
 
 export default React.createClass({
     componentDidMount() {
+        if (this.props && this.props.location && this.props.location.query) {
+            console.log(this.props.location.query.id);
+        }
+        
     },
 
     render() {

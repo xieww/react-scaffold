@@ -1,0 +1,40 @@
+.news-nav {
+    font-size: 0.41rem;
+    color: #666;
+    background-color: #e2e2e2;
+    position: relative;
+
+    ul {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    li {
+        display: inline-block;
+        margin: 0.1rem 0.4rem;
+        padding: 0 0.2rem;
+        height: 0.6rem;
+        line-height: 0.6rem;
+        text-align: center;
+        border-radius: 4px;
+
+        &.cur {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    .plus {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        display: inline-block;
+        width: 0.8rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        text-align: center;
+        font-size: 0.6rem;
+        background-color: #e2e2e2;
+    }
+}
